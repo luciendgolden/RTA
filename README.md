@@ -34,5 +34,5 @@ poetry run python augment_service/main.py --query "How are you?" --corpus /data/
 # Augmentation
 
 ```sh
-poetry run python augment_service/main.py --corpus /Users/alexandertampier/Github/HuLDA/data/babylm/clean/10M/bnc_spoken.train --aug_percentage=0.5
+poetry run python augment_service/main.py --corpus /data/babylm/clean/10M/bnc_spoken.train --aug_percentage=0.5
 ```
