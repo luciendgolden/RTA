@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "rta"
+version = "0.1.0"
+description = "RecombiText Augmentation (RTA)"
+authors = ["Alexander Tampier <alexander.tampier@univie.ac.at>"]
+packages = [
+    { include="augment_service"},
+    { include="shared"},
+]
+
+[tool.poetry.dependencies]
+python = ">=3.13.2,<3.14"
+elasticsearch = "^8.0.0"
+numpy = "^2.2.5"
+tqdm = "^4.67.1"
+nltk = "^3.9.1"
+scikit-learn = "^1.6.1"
+scipy = "^1.15.2"
+flask = "^3.1.0"
+contractions = "^0.1.73"
+pandas = "^2.2.3"
+spacy = "^3.8.7"
+torch = "2.7.1"
+transformers = "4.50.3"
+datasets = "3.6.0"
+evaluate = "^0.4.3"
+torch-optimizer = "^0.3.0"
+huggingface-hub = "^0.33.0"
+rouge-score = "^0.1.2"
+absl-py = "^2.3.1"
+accelerate = "^1.10.0"
+filelock = "^3.19.1"
+requests = "^2.32.5"
+wandb = "^0.21.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

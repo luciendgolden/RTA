@@ -1,0 +1,11 @@
+poetry run python augment_service/main.py \
+        --query "Two months passed, and spring deepened into summer." \
+        --input_file data_cleaned/babylm_10M/gutenberg.train \
+        --context_window_size 3 \
+        --context_window_threshold 0.6 \
+        --rank_constant 60 \
+        --embeddings_file models/glove/babylm_10M/babylm_10M.vectors.txt \
+        --vocab_file models/glove/babylm_10M/babylm_10M.vocab.txt \
+        --top_k 10 \
+        --temperature 0.7 \
+        --verbosity 2

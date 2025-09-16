@@ -1,0 +1,33 @@
+poetry run python pretrain_service/decoder/run_clm.py \
+  --model_type gpt2 \
+  --tokenizer_name pretrain_service/data/babylm_10M/tokenizer_babylm10M.json \
+  --train_file pretrain_service/data/babylm_10M/full_train.txt \
+  --validation_file pretrain_service/data/test/full_test.txt \
+  --output_dir pretrain_service/decoder/babylm-base10m-gpt2 \
+  --overwrite_output_dir \
+  --do_train \
+  --do_eval \
+  --max_steps 20000 \
+  --token_to_word_ratio 1.6384 \
+  --learning_rate 5e-5 \
+  --warmup_steps 200 \
+  --max_grad_norm 1.0 \
+  --adam_beta1 0.9 \
+  --adam_beta2 0.999 \
+  --adam_epsilon 1e-8 \
+  --save_strategy steps \
+  --save_steps 99999999 \
+  --save_total_limit 20 \
+  --logging_steps 100 \
+  --eval_strategy steps \
+  --eval_steps 99999999 \
+  --block_size 512 \
+  --per_device_train_batch_size 16 \
+  --per_device_eval_batch_size 16 \
+  --preprocessing_num_workers 16 \
+  --gradient_checkpointing \
+  --use_fast_tokenizer \
+  --report_to wandb \
+  --run_name "babylm-baseline-10m-gpt2" \
+  --seed 42 \
+  --fp16

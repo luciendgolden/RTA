@@ -1,0 +1,28 @@
+poetry run python pretrain_service/encoder/run_mlm.py \
+  --model_type roberta \
+  --config_overrides "bos_token_id=1,eos_token_id=2,pad_token_id=3,vocab_size=16384" \
+  --tokenizer_name pretrain_service/tokenizers/babylm_10M \
+  --train_file data_cleaned/babylm_10M/full_train.txt \
+  --validation_file data_cleaned/test/full_test.txt \
+  --overwrite_cache \
+  --output_dir pretrain_service/encoder/babylm-base10m-roberta \
+  --overwrite_output_dir \
+  --do_train \
+  --do_eval \
+  --max_steps 20000 \
+  --token_to_word_ratio 1.6384 \
+  --learning_rate 5e-5 \
+  --warmup_steps 200 \
+  --max_seq_length 512 \
+  --per_device_train_batch_size 16 \
+  --per_device_eval_batch_size 16 \
+  --save_total_limit 20 \
+  --logging_steps 100 \
+  --save_strategy steps \
+  --save_steps 99999999 \
+  --eval_strategy steps \
+  --eval_steps 99999999 \
+  --gradient_checkpointing \
+  --use_fast_tokenizer \
+  --run_name "babylm-base10m-roberta" \
+  --seed 42 

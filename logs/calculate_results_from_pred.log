@@ -1,0 +1,251 @@
++ echo 'Changing to repository root...'
+Changing to repository root...
++ cd evaluation-pipeline-2025
++ bash calculate_results_from_pred.sh babylm-base10m-gpt2 causal
+2025-08-24 10:37:08,392 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+2025-08-24 10:37:10,300 - INFO - Model-Child AoA correlation: -0.001 (p=0.997)
+2025-08-24 10:37:10,300 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		61.62
+SUPPLEMENT	58.17
+EWOK		50.01
+ENTITY TRACKING	12.95
+WUG ADJ		0.69
+WUG PAST	-0.06
+COMPS		51.48
+READING (SPR)	4.01
+READING (ET)	11.83
+GLUE		57.67
+AoA		-0.00
++ bash calculate_results_from_pred.sh babylm-base9m-gpt2 causal
+2025-08-24 10:37:12,596 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:37:14,617 - INFO - Model-Child AoA correlation: 0.120 (p=0.670)
+2025-08-24 10:37:14,617 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		61.27
+SUPPLEMENT	59.80
+EWOK		50.24
+ENTITY TRACKING	16.53
+WUG ADJ		0.71
+WUG PAST	-0.05
+COMPS		50.84
+READING (SPR)	4.39
+READING (ET)	11.80
+GLUE		57.67
+AoA		0.12
++ bash calculate_results_from_pred.sh babylm-base7f5m-gpt2 causal
+2025-08-24 10:37:16,801 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:37:18,830 - INFO - Model-Child AoA correlation: 0.233 (p=0.404)
+2025-08-24 10:37:18,830 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		62.91
+SUPPLEMENT	59.02
+EWOK		49.74
+ENTITY TRACKING	17.50
+WUG ADJ		0.56
+WUG PAST	0.03
+COMPS		51.42
+READING (SPR)	4.13
+READING (ET)	11.64
+GLUE		57.67
+AoA		0.23
++ bash calculate_results_from_pred.sh babylm-base5m-gpt2 causal
+2025-08-24 10:37:21,061 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+2025-08-24 10:37:22,976 - INFO - Model-Child AoA correlation: 0.031 (p=0.888)
+2025-08-24 10:37:22,976 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		61.87
+SUPPLEMENT	61.08
+EWOK		50.80
+ENTITY TRACKING	16.51
+WUG ADJ		0.56
+WUG PAST	0.24
+COMPS		50.83
+READING (SPR)	4.74
+READING (ET)	12.05
+GLUE		57.67
+AoA		0.03
++ bash calculate_results_from_pred.sh babylm-base2f5m-gpt2 causal
+2025-08-24 10:37:25,242 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+2025-08-24 10:37:27,151 - INFO - Model-Child AoA correlation: 0.265 (p=0.182)
+2025-08-24 10:37:27,152 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		60.18
+SUPPLEMENT	60.48
+EWOK		50.41
+ENTITY TRACKING	19.65
+WUG ADJ		0.54
+WUG PAST	0.24
+COMPS		50.49
+READING (SPR)	3.97
+READING (ET)	11.65
+GLUE		57.67
+AoA		0.26
++ bash calculate_results_from_pred.sh babylm-base1m-gpt2 causal
+2025-08-24 10:37:29,326 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:37:31,135 - INFO - Model-Child AoA correlation: 0.089 (p=0.718)
+2025-08-24 10:37:31,135 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		58.30
+SUPPLEMENT	57.42
+EWOK		49.81
+ENTITY TRACKING	16.24
+WUG ADJ		0.47
+WUG PAST	-0.17
+COMPS		50.38
+READING (SPR)	3.92
+READING (ET)	10.07
+GLUE		57.67
+AoA		0.09
++ bash calculate_results_from_pred.sh babylm-rta10m-gpt2 causal
+2025-08-24 10:37:33,340 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:37:35,270 - INFO - Model-Child AoA correlation: 0.204 (p=0.388)
+2025-08-24 10:37:35,270 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		61.99
+SUPPLEMENT	59.11
+EWOK		50.20
+ENTITY TRACKING	16.19
+WUG ADJ		0.54
+WUG PAST	0.07
+COMPS		51.22
+READING (SPR)	4.32
+READING (ET)	12.02
+GLUE		57.67
+AoA		0.20
++ bash calculate_results_from_pred.sh babylm-base10m-roberta mlm
+2025-08-24 10:37:37,491 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:37:39,398 - WARNING - Only 0 valid words for correlation
+###### RESULTS ######
+=====================
+BLIMP		54.44
+SUPPLEMENT	50.98
+EWOK		51.01
+ENTITY TRACKING	32.27
+WUG ADJ		0.58
+WUG PAST	-0.09
+COMPS		50.34
+READING (SPR)	3.08
+READING (ET)	10.06
+GLUE		61.27
+AoA		0.00
++ bash calculate_results_from_pred.sh babylm-base9m-roberta mlm
+2025-08-24 10:37:41,635 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:37:43,491 - WARNING - Only 2 valid words for correlation
+###### RESULTS ######
+=====================
+BLIMP		54.30
+SUPPLEMENT	51.67
+EWOK		49.62
+ENTITY TRACKING	33.83
+WUG ADJ		0.57
+WUG PAST	-0.15
+COMPS		50.85
+READING (SPR)	2.93
+READING (ET)	10.25
+GLUE		62.11
+AoA		0.00
++ bash calculate_results_from_pred.sh babylm-base7f5m-roberta mlm
+2025-08-24 10:37:45,772 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+2025-08-24 10:37:47,693 - WARNING - Only 0 valid words for correlation
+###### RESULTS ######
+=====================
+BLIMP		55.76
+SUPPLEMENT	52.72
+EWOK		49.92
+ENTITY TRACKING	29.02
+WUG ADJ		0.68
+WUG PAST	-0.20
+COMPS		50.90
+READING (SPR)	3.42
+READING (ET)	11.03
+GLUE		61.65
+AoA		0.00
++ bash calculate_results_from_pred.sh babylm-base5m-roberta mlm
+2025-08-24 10:37:49,899 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+2025-08-24 10:37:51,817 - WARNING - Only 1 valid words for correlation
+###### RESULTS ######
+=====================
+BLIMP		55.56
+SUPPLEMENT	51.55
+EWOK		49.89
+ENTITY TRACKING	33.65
+WUG ADJ		0.67
+WUG PAST	-0.03
+COMPS		50.93
+READING (SPR)	3.50
+READING (ET)	11.02
+GLUE		62.29
+AoA		0.00
++ bash calculate_results_from_pred.sh babylm-base2f5m-roberta mlm
+2025-08-24 10:37:54,142 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:37:56,156 - WARNING - Only 2 valid words for correlation
+###### RESULTS ######
+=====================
+BLIMP		55.15
+SUPPLEMENT	51.77
+EWOK		49.38
+ENTITY TRACKING	38.89
+WUG ADJ		0.48
+WUG PAST	0.23
+COMPS		51.25
+READING (SPR)	3.52
+READING (ET)	11.01
+GLUE		61.19
+AoA		0.00
++ bash calculate_results_from_pred.sh babylm-base1m-roberta mlm
+2025-08-24 10:37:58,576 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+/Users/alexandertampier/Github/RTA/evaluation-pipeline-2025/evaluation_pipeline/utils.py:197: OptimizeWarning: Covariance of the parameters could not be estimated
+  popt, _ = curve_fit(
+2025-08-24 10:38:00,697 - INFO - Model-Child AoA correlation: -0.274 (p=0.656)
+2025-08-24 10:38:00,697 - INFO - Overall mean monthly score: 0.375
+###### RESULTS ######
+=====================
+BLIMP		57.06
+SUPPLEMENT	52.33
+EWOK		50.17
+ENTITY TRACKING	28.41
+WUG ADJ		0.52
+WUG PAST	-0.03
+COMPS		50.66
+READING (SPR)	3.53
+READING (ET)	10.17
+GLUE		61.51
+AoA		-0.27
++ bash calculate_results_from_pred.sh babylm-rta10m-roberta mlm
+2025-08-24 10:38:03,175 - INFO - Loaded CDI data for 504 words across ages 16-30 months
+2025-08-24 10:38:05,210 - WARNING - Only 0 valid words for correlation
+###### RESULTS ######
+=====================
+BLIMP		54.39
+SUPPLEMENT	53.10
+EWOK		49.46
+ENTITY TRACKING	29.70
+WUG ADJ		0.72
+WUG PAST	-0.03
+COMPS		50.49
+READING (SPR)	2.81
+READING (ET)	10.48
+GLUE		61.98
+AoA		0.00
