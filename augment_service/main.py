@@ -201,6 +201,7 @@ class RTAService:
                         for candidate in rrf_results[:top_k_limit]:
                             cand_idx = candidate['_source']['sentence_idx']
                             usage = usage_counts.get(cand_idx, 0)
+                            # candidate gets considered more than once if max_usage > 1
                             if usage < max_usage:
                                 candidate['_rrf_score'] = candidate['_rrf_score'] / (usage + 1)
                                 available_candidates.append(candidate)
