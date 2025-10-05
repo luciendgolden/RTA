@@ -1,4 +1,5 @@
 # RecombiText Augmentation (RTA)
+We introduce RecombiText Augmentation (RTA), a novel purely statistical NLP method for compositional data augmentation for data-efficient LLM pre-training in low-resource scenarios. RTA identifies lexically and semantically similar sentences within the corpus and generates synthetic sentence pairs from them while preserving underlying patterns from the corpus. We pre-train two language models on a domain-specific, low-resource corpus of 10 million words. A baseline is created and compared with the RTA-augmented variants. Zero-shot results show that the language models improve the most in entity tracking, self-paced reading, and morphological generalization. Comparable baseline performances are achieved in the other tasks. We demonstrate that RTA is capable of effectively enhancing LLM pre-training datasets in a low-resource scenario solely through statistical processing of the available data.
 
 # Query
 
