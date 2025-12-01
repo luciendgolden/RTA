@@ -1,5 +1,31 @@
-# RecombiText Augmentation (RTA)
-We introduce RecombiText Augmentation (RTA), a novel purely statistical NLP method for compositional data augmentation for data-efficient LLM pre-training in low-resource scenarios. RTA identifies lexically and semantically similar sentences within the corpus and generates synthetic sentence pairs from them while preserving underlying patterns from the corpus. We pre-train GPT-2 and RoBERTa language models on a domain-specific, low-resource corpus of 10 million words, with different proportions of augmented data. We compare our RTA-augmented model variants to a baseline model trained on the full original dataset. Zero-shot results show that the language models pre-trained on synthetic data improve in entity tracking, self-paced reading, and morphological generalization benchmarks. In other tasks, the performance is comparable to the baseline model. We demonstrate that it is possible to expand low-resource datasets by two- to four-fold without compromising benchmark performance, solely through statistical processing of the available data.
+<h2 align="center"><b><h3>RecombiText: Compositional Data Augmentation for Enhancing LLM Pre-Training Datasets in Low-Resource Scenarios</h3></b></h2><br>
+
+
+<p align="center">
+  <b>Alexander Tampier, Lukas Thoma, Loris Schoenegger, Benjamin Roth</b>
+</p>
+
+<p align="center">
+  <i>
+    University of Vienna<br>
+    Research Group Data Mining and Machine Learning<br>
+  </i>
+</p>
+<br>
+
+<p align="center">
+  <a href="https://aclanthology.org/2025.babylm-main.40/"><b>Paper</b></a><br>
+  <a href="https://huggingface.co/alexandertam"><b>HuggingFace Models</b></a><br>
+</p>
+
+_______
+
+<br>
+
+<h3 align="center"><b>Abstract</b></h3><br>
+We introduce RecombiText Augmentation (RTA), a novel purely statistical NLP method for compositional data augmentation for data-efficient LLM pre-training in low-resource scenarios. RTA identifies lexically and semantically similar sentences within the corpus and generates synthetic sentence pairs from them while preserving underlying patterns from the corpus. We pre-train GPT-2 and RoBERTa language models on a domain-specific, low-resource corpus of 10 million words, with different proportions of augmented data. We compare our RTA-augmented model variants to a baseline model trained on the full original dataset. Zero-shot results show that the language models pre-trained on synthetic data improve in entity tracking, self-paced reading, and morphological generalization benchmarks. In other tasks, the performance is comparable to the baseline model. We demonstrate that it is possible to expand low-resource datasets by two- to four-fold without compromising benchmark performance, solely through statistical processing of the available data.<br>
+
+_______
 
 # Query
 
